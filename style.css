@@ -1,0 +1,41 @@
+body {
+    background-image: url('background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .container {
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-top: 30px;
+    padding: 30px;
+  }
+  
+  .sensor {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .sensor i {
+    font-size: 35px;
+    margin-bottom: 3px;
+  }
+  
+  .sensor h3 {
+    font-size: 13px;
+    margin-bottom: 3px;
+  }
+  
+  .sensor-value {
+    font-size: 12px;
+  }
+  
+  
+  #alert-container {
+    margin-bottom: 20px;
+  }
+  
+  .sensor-warning {
+    color: red;
+    font-weight: bold;
+  }
+  

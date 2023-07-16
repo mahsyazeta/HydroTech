@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Dashboard</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="dashboard.html">HydroTech</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="settings-dosing.html">Setting Dosing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="settings-growlight.html">Setting Growlight</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="jumbotron">
+      <h1 class="display-4">HydroTech</h1>
+      <p class="lead">Monitor dan kontrol kondisi hydroponic Anda.</p>
+    </div>
+    <div id="alert-container"></div>
+    <div id="sensing-data">
+      <div id="sensing-data">
+        <div class="row align-items-center">
+          <div class="col-md-2">
+            <div class="sensor">
+              <i class="fas fa-flask"></i>
+              <h3>EC</h3>
+              <p id="ec" class="sensor-value"></p>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="sensor">
+              <i class="fas fa-tint"></i>
+              <h3>pH</h3>
+              <p id="ph" class="sensor-value"></p>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="sensor">
+              <i class="fas fa-water"></i>
+              <h3>DO</h3>
+              <p id="do" class="sensor-value"></p>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="sensor">
+              <i class="fas fa-bolt"></i>
+              <h3>kWh</h3>
+              <p id="kwh" class="sensor-value"></p>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="sensor">
+              <i class="fas fa-thermometer-half"></i>
+              <h3>Suhu</h3>
+              <p id="temperature" class="sensor-value"></p>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="sensor">
+              <i class="far fa-calendar-alt"></i>
+              <i class="far fa-clock"></i>
+              <h3>Tanggal & Waktu</h3>
+              <p id="datetime" class="sensor-value"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    <div id="location-info">
+      <p id="location"></p>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="dashboard.js"></script>
+</body>
+</html>
